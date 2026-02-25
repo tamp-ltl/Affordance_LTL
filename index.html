@@ -19,8 +19,10 @@
     
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    
+
+    <!-- EmailJS SDK for email functionality -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
     <style>
         * {
             margin: 0;
@@ -667,30 +669,30 @@
     <section class="hero-video-wall" id="home">
         <!-- Video grid background -->
         <div class="hero-video-bg" id="heroVideoBg">
-            <div class="vw-cell"><video data-src="assets/video/1_tidy_desk.mp4" muted loop playsinline preload="none"></video></div>
-            <div class="vw-cell"><video data-src="assets/video/2_hungry.mp4" muted loop playsinline preload="none"></video></div>
-            <div class="vw-cell"><video data-src="assets/video/3_protein.mp4" muted loop playsinline preload="none"></video></div>
-            <div class="vw-cell"><video data-src="assets/video/4_prepare_food_two.mp4" muted loop playsinline preload="none"></video></div>
-            <div class="vw-cell"><video data-src="assets/video/5_weigh.mp4" muted loop playsinline preload="none"></video></div>
-            <div class="vw-cell"><video data-src="assets/video/6_pour_tea.mp4" muted loop playsinline preload="none"></video></div>
-            <div class="vw-cell"><video data-src="assets/video/7_sleepy.mp4" muted loop playsinline preload="none"></video></div>
-            <div class="vw-cell"><video data-src="assets/video/8_wilted_flower.mp4" muted loop playsinline preload="none"></video></div>
-            <div class="vw-cell"><video data-src="assets/video/9_sweep.mp4" muted loop playsinline preload="none"></video></div>
-            <div class="vw-cell"><video data-src="assets/video/10_breakfast.mp4" muted loop playsinline preload="none"></video></div>
-            <div class="vw-cell"><video data-src="assets/video/11_clean_tea.mp4" muted loop playsinline preload="none"></video></div>
-            <div class="vw-cell"><video data-src="assets/video/12_pour_tea.mp4" muted loop playsinline preload="none"></video></div>
-            <div class="vw-cell"><video data-src="assets/video/13_hammer_nail.mp4" muted loop playsinline preload="none"></video></div>
-            <div class="vw-cell"><video data-src="assets/video/14_cut_tofu.mp4" muted loop playsinline preload="none"></video></div>
-            <div class="vw-cell"><video data-src="assets/video/15_pour_water_warm.mp4" muted loop playsinline preload="none"></video></div>
-            <div class="vw-cell"><video data-src="assets/video/16_pour_hot_water.mp4" muted loop playsinline preload="none"></video></div>
-            <div class="vw-cell"><video data-src="assets/video/17_scoop_coffee.mp4" muted loop playsinline preload="none"></video></div>
-            <div class="vw-cell"><video data-src="assets/video/18_stir_coffee.mp4" muted loop playsinline preload="none"></video></div>
-            <div class="vw-cell"><video data-src="assets/video/19_water_plant.mp4" muted loop playsinline preload="none"></video></div>
-            <div class="vw-cell"><video data-src="assets/video/20_pour_milk.mp4" muted loop playsinline preload="none"></video></div>
-            <div class="vw-cell"><video data-src="assets/video/21_clean_tea_leaves.mp4" muted loop playsinline preload="none"></video></div>
-            <div class="vw-cell"><video data-src="assets/video/22_pour_tea.mp4" muted loop playsinline preload="none"></video></div>
-            <div class="vw-cell"><video data-src="assets/video/23_pour_hot_water.mp4" muted loop playsinline preload="none"></video></div>
-            <div class="vw-cell"><video data-src="assets/video/24_make_coffee.mp4" muted loop playsinline preload="none"></video></div>
+            <div class="vw-cell"><video data-src="assets/video/1.静态：整理桌面.mp4" muted loop playsinline preload="none"></video></div>
+            <div class="vw-cell"><video data-src="assets/video/2. 静态：我饿了.mp4" muted loop playsinline preload="none"></video></div>
+            <div class="vw-cell"><video data-src="assets/video/3. 静态：补充蛋白质.mp4" muted loop playsinline preload="none"></video></div>
+            <div class="vw-cell"><video data-src="assets/video/4. 静态：帮我准备两个人的实物.mp4" muted loop playsinline preload="none"></video></div>
+            <div class="vw-cell"><video data-src="assets/video/5. 静态：称重.mp4" muted loop playsinline preload="none"></video></div>
+            <div class="vw-cell"><video data-src="assets/video/6. 静态：倒茶.mp4" muted loop playsinline preload="none"></video></div>
+            <div class="vw-cell"><video data-src="assets/video/7. 静态：我困了.mp4" muted loop playsinline preload="none"></video></div>
+            <div class="vw-cell"><video data-src="assets/video/8. 静态：花枯萎了.mp4" muted loop playsinline preload="none"></video></div>
+            <div class="vw-cell"><video data-src="assets/video/9. 静态：扫垃圾.mp4" muted loop playsinline preload="none"></video></div>
+            <div class="vw-cell"><video data-src="assets/video/10.静态：准备早餐.mp4" muted loop playsinline preload="none"></video></div>
+            <div class="vw-cell"><video data-src="assets/video/11. 茶叶清理.mp4" muted loop playsinline preload="none"></video></div>
+            <div class="vw-cell"><video data-src="assets/video/12.倒茶.mp4" muted loop playsinline preload="none"></video></div>
+            <div class="vw-cell"><video data-src="assets/video/13. 钉钉子.mp4" muted loop playsinline preload="none"></video></div>
+            <div class="vw-cell"><video data-src="assets/video/14.切豆腐.mp4" muted loop playsinline preload="none"></video></div>
+            <div class="vw-cell"><video data-src="assets/video/15.倒水并保温.mp4" muted loop playsinline preload="none"></video></div>
+            <div class="vw-cell"><video data-src="assets/video/16. 倒开水.mp4" muted loop playsinline preload="none"></video></div>
+            <div class="vw-cell"><video data-src="assets/video/17.舀咖啡.mp4" muted loop playsinline preload="none"></video></div>
+            <div class="vw-cell"><video data-src="assets/video/18. 搅拌咖啡.mp4" muted loop playsinline preload="none"></video></div>
+            <div class="vw-cell"><video data-src="assets/video/19.浇水.mp4" muted loop playsinline preload="none"></video></div>
+            <div class="vw-cell"><video data-src="assets/video/20.倒牛奶.mp4" muted loop playsinline preload="none"></video></div>
+            <div class="vw-cell"><video data-src="assets/video/21.清理茶叶.mp4" muted loop playsinline preload="none"></video></div>
+            <div class="vw-cell"><video data-src="assets/video/22. 倒茶.mp4" muted loop playsinline preload="none"></video></div>
+            <div class="vw-cell"><video data-src="assets/video/23. 倒开水.mp4" muted loop playsinline preload="none"></video></div>
+            <div class="vw-cell"><video data-src="assets/video/24.做咖啡.mp4" muted loop playsinline preload="none"></video></div>
         </div>
 
         <!-- Dark overlay -->
@@ -1461,14 +1463,14 @@
                 </div>
                 <div class="failure-carousel" data-drag-scroll>
                     <div class="failure-card">
-                        <video src="assets/video/23_pour_hot_water.mp4" muted loop playsinline preload="none"></video>
+                        <video src="assets/video/23. 倒开水.mp4" muted loop playsinline preload="none"></video>
                         <div class="fail-info">
                             <h4>Pour Boiling Water</h4>
                             <p>Imprecise 6-DoF grasp pose under partial occlusion causes water to spill outside the target cup.</p>
                         </div>
                     </div>
                     <div class="failure-card">
-                        <video src="assets/video/24_make_coffee.mp4" muted loop playsinline preload="none"></video>
+                        <video src="assets/video/24.做咖啡.mp4" muted loop playsinline preload="none"></video>
                         <div class="fail-info">
                             <h4>Make Coffee</h4>
                             <p>Temporary spoon occlusion triggers unnecessary global replan, causing repeated sub-task and timeout.</p>
